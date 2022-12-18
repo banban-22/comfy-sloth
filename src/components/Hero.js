@@ -1,16 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import heroBcg from '../image/hero-bcg.jpeg';
-import heroBcg2 from '../image/hero-bcg-2.jpeg';
+import heroBcg from '../image/hero-bcg.png';
 
 const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
         <h1>
-          design your <br />
-          comfort zone
+          find your <br />
+          productive tools
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
@@ -22,8 +21,8 @@ const Hero = () => {
         </Link>
       </article>
       <article className="img-container">
-        <img src={heroBcg} alt="nice table" className="main-img" />
-        <img src={heroBcg2} alt="person working" className="accent-img" />
+        <img src={heroBcg} alt="productive person" className="main-img" />
+        {/* <img src={heroBcg2} alt="person working" className="accent-img" /> */}
       </article>
     </Wrapper>
   );
@@ -64,7 +63,7 @@ const Wrapper = styled.section`
     }
     .main-img {
       width: 100%;
-      height: 550px;
+      height: 450px;
       position: relative;
       border-radius: var(--radius);
       display: block;
@@ -78,16 +77,16 @@ const Wrapper = styled.section`
       transform: translateX(-50%);
       border-radius: var(--radius);
     }
-    .img-container::before {
-      content: '';
-      position: absolute;
-      width: 10%;
-      height: 80%;
-      background: var(--clr-primary-9);
-      bottom: 0%;
-      left: -8%;
-      border-radius: var(--radius);
-    }
+    // .img-container::before {
+    //   content: '';
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: var(--clr-primary-9);
+    //   bottom: -10%;
+    //   left: -6%;
+    //   border-radius: var(--radius);
+    // }
   }
 `;
 
